@@ -28,8 +28,6 @@ public class ViewController extends javax.swing.JFrame {
     public ViewController(Model model) {
         initComponents();
         this.model = model;
-        calcDisplay.setText("0");
-        previousNum.setText("0");
     }
 
     /**
@@ -234,6 +232,7 @@ public class ViewController extends javax.swing.JFrame {
             }
         });
 
+        buttonNegPos.setBackground(new java.awt.Color(234, 151, 72));
         buttonNegPos.setText("(-)");
         buttonNegPos.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         buttonNegPos.addActionListener(new java.awt.event.ActionListener() {
@@ -362,8 +361,8 @@ public class ViewController extends javax.swing.JFrame {
 
     private void buttonClearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonClearActionPerformed
         // TODO add your handling code here:
-        calcDisplay.setText("0");
-        previousNum.setText("0");
+        calcDisplay.setText("");
+        previousNum.setText("");
         negative = 0;
     }//GEN-LAST:event_buttonClearActionPerformed
 
