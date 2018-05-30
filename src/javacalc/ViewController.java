@@ -361,9 +361,12 @@ public class ViewController extends javax.swing.JFrame {
 
     private void buttonClearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonClearActionPerformed
         // TODO add your handling code here:
+        secondNum = 0;
+        negative = 0;
+        clicks = 0;
         calcDisplay.setText("");
         previousNum.setText("");
-        negative = 0;
+
     }//GEN-LAST:event_buttonClearActionPerformed
 
     private void buttonMinusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonMinusActionPerformed
